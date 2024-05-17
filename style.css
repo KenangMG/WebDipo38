@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+#logo{
+    width: 60px;
+    height: auto;
+    position: relative;
+    align-items:center ;
+}
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+}
+.sidebar h2 {
+    text-align: center;
+    color: #fff;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #ac0000c9;
+}
+.main-content {
+    margin-left: 250px;
+    
+}
+.welcome {
+    text-align: center;
+    margin-top: 20px;
+}
+.welcome h1 {
+    color: #b45309;
+}
+.welcome p {
+    font-size: 18px;
+    color: #555;
+}
+.reserve-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(206, 62, 5);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.reserve-btn:hover {
+    background-color: #f7f7f7;
+    width: 210px;
+    color: black;
+}
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+.image-section img {
+    width: 80%;
+    border-radius: 10px;
+}
+.pers{
+    background-color: brown;
+    margin: 0;
+}
+
+.lokasi{
+    text-align: center;
+    margin-left: 250px;
+}
+.lokasi iframe {
+    width: 80%;
+    height: 450px;
+    border: 0;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.more-info{
+    background-color: brown;
+    padding: 20px 0px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.more-info p{
+    background-color: white;
+    padding: 10px 10px;
+    text-align: center;
+}
+.carousel {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: brown;
+}
+.carousel img {
+    width: 50%;
+    display: none;
+    height: 800px;
+    align-items: center;
+    justify-content: center ;
+    margin:0px 350px;
+}
+.carousel img.active {
+    display: block;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 22px;
+    padding: 20px ;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.menu{
+    margin-left: 250px;
+    text-align: center;
+}
+.menu-item h2{
+    background-color: brown;
+    color: white;
+    padding: 50px;
+    margin-bottom: 0;
+}
+.container {
+   
+    align-items: center; /* Mengatur vertikal ke tengah */
+    text-align: left;
+}
+
+.image-menu {
+    flex-shrink: 0; /* Agar gambar tidak memperbesar wadah */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pesan-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.pesan-btn:hover {
+    background-color: #f7f7f7;
+    width: 210px;
+    color: black;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.menu-section {
+    margin: 20px 0;
+}
+.menu-section h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: brown;
+    padding: 30px;
+    margin-bottom: 0;
+}
+.menu-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 250px;
+}
+.menu-item img {
+    width: 500px;
+    height: 500px;
+    margin-left: 250px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.menu-item-content {
+    flex-grow: 1;
+    
+}
+.menu-item-content h3 {
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+.menu-item-content p {
+    text-align: left;
+
+}
+
+.footer{
+    background-color: #c0bcbc;
+    text-align: center;
+    margin-left: 250px;
+    padding: 10px;
+}
