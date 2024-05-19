@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lokasi.css">
+    
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <img id="logo" src="./File PEMBUATAN WEB TA/Logo Rounded.png">
+        <h2>Rumah Makan & Coffe Shop Dipo 38</h2>
+        <a href="home.html">Halaman Utama</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="#menu">Menu</a>
+    </div>
+    <div class="lokasi" id="lokasi">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        <h2>Lokasi</h2>
+        <iframe src="https://maps.app.goo.gl/YxXfSCtJWXKGKwH39" allowfullscreen="" loading="lazy"></iframe>
+            <div class="info">
+                <h2>Hubungi Kami</h2>
+                <p>topandakevin@gmail.com<br>+62 822-7437-9166<br>Jl. Diponegoro, Bukit Jengkol, Kec. Pangkalan Susu, Kabupaten Langkat, Sumatera Utara</p>
+                <h2>Jam Operasional</h2>
+                <p>Senin : 09.00 - 22.00<br>
+                   Selasa : 09.00 – 22.00<br>
+                   Rabu : 09.00 – 22.00<br>
+                   Kamis : 09.00 – 22.00<br>
+                   Jumat : 09.00 – 22.00<br>
+                   Sabtu : Tutup<br>
+                    Minggu : Tutup <br>
+
+                </p>
+            
+            </div>
+            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/kepiting(1).jpeg" style="width:50% ; height: auto;">
+            <div class="more-info">
+                <p>Di Rumah Makan & coffe shop dipo 38, 
+                    kami menghadirkan pengalaman pelanggan yang unik dengan suasana yang hangat dan ramah. Setiap kunjungan di sini tidak hanya tentang makanan lezat, 
+                    tetapi juga tentang menciptakan kenangan berharga. Suasana yang dirancang dengan teliti, 
+                    kehangatan keramahan, dan perhatian terhadap detail membuat setiap kunjungan menjadi istimewa dan tak terlupakan. Di sini, Anda bukan sekadar pelanggan, Anda adalah bagian dari keluarga kami. 
+                
+                </p>
+            </div>
+            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/WhatsApp Image 2024-04-29 at 17.17.56.jpeg" style="width:50% ; height: auto;">
+            <div class="more-info">
+                <p>Di Rumah Makan & coffe shop dipo 38, Anda akan menemukan suasana yang unik dengan konsep warung makan bergaya rumah kayu tingkat. 
+                    Setiap sudut dirancang untuk menciptakan nuansa yang hangat dan alami, sambil memberikan kenyamanan kepada setiap pengunjung. 
+                    Dengan dekorasi yang menghadirkan sentuhan tradisional namun tetap elegan, serta pencahayaan yang lembut, 
+                    Anda akan merasa seperti berada di rumah masa lampau sambil menikmati hidangan lezat kami. Suasana santai namun 
+                    penuh dengan karakter di Rumah Makan & coffe shop dipo 38 akan membuat setiap kunjungan menjadi pengalaman yang berbeda dan memikat.
+
+                
+                </p>
+            </div>
+            <section>
+                <div class="slideshow-container fade">
+                    <div class="Containers">
+                        
+                        <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/2020-04-29.jpg" style="max-width:100%">
+                        
+                    </div>
+    
+                    <div class="Containers">
+                        
+                        <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/2020-07-18.jpg" style="max-width:100%;">
+                       
+                    </div>
+    
+                    <div class="Containers">
+                        
+                        <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/2022-09-18.jpg" style="max-width:100%">
+                        
+                    </div>
+    
+                    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+            </section>
+    </div>
+    <script>
+        var slidePosition = 1;
+        SlideShow(slidePosition);
+
+        function plusSlides(n) {
+        SlideShow(slidePosition += n);
+        }
+
+        function currentSlide(n) {
+        SlideShow(slidePosition = n);
+        }
+
+        function SlideShow(n) {
+        var i;
+        var slides = document.getElementsByClassName("Containers");
+        var circles = document.getElementsByClassName("dots");
+        if (n > slides.length) {slidePosition = 1}
+        if (n < 1) {slidePosition = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < circles.length; i++) {
+            circles[i].className = circles[i].className.replace(" enable", "");
+        }
+        slides[slidePosition-1].style.display = "block";
+        circles[slidePosition-1].className += " enable";
+        } 
+
+</script>
+    <script>
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("lokasi").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("lokasi").style.marginLeft= "0";
+}
+    </script>
+</body>
+</html>

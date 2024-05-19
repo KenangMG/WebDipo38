@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+#logo{
+    width: 60px;
+    height: auto;
+    position: relative;
+    align-items:center ;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 0;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .lokasi{
+    text-align: center;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.lokasi iframe {
+    width: 80%;
+    height: 450px;
+    border: 0;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.more-info{
+    background-color: #bf340a;
+    padding: 100px 0px;
+    
+}
+
+.more-info p{
+    background-color: white;
+    padding: 30px 500px;
+    text-align: center;
+    line-height: 3rem;
+    color: #bf340a;
+    font-weight: bold;
+}
+.slideshow-container {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    
+    
+  }
+  
+  .Containers {
+    display: flex;
+    align-items: center;
+    background-color: #bf340a;
+    padding-bottom: 100px;
+  }
+  .Containers img{
+    width: 30%;
+    height: 500px;
+    border-radius: 10px;
+  }
+  
+  .Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -50px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 50px;
+    user-select: none;
+    background-color: #111;
+  }
+  
+  .forward {
+    right: 655px;
+    border-radius: 100px;
+  }
+  .Back{
+   left: 655px;
+    border-radius: 100px;
+  }
+  
+  .Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  
+ 
+  
+  
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
