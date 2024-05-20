@@ -1,73 +1,98 @@
+*{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #fff;
+    padding: 0;
 }
-#logo{
-    width: 60px;
-    height: auto;
-    position: relative;
-    align-items:center ;
+.logo{
+    width: 50px;
+    height: 50px;
+    
+   
+    
 }
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
+/*nav*/
+nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+  position: relative;
+  height: 70px;
+}
+
+
+nav ul{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i{
+  font-size: 30px;
     cursor: pointer;
-    background-color: #111;
+   
     color: white;
     padding: 10px 15px;
     border: none;
-    margin-left: 0;
+    margin-left: 0px;
+    align-items: left;
+    justify-content: left;
+}
+
+@media (max-width:600px) {
+  nav ul{
+      position: absolute;
+      top: 54px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #bf340a;
+      gap: 0;
+      overflow: hidden;
   }
-  
-  .openbtn:hover {
-    background-color: #444;
+  nav ul li{
+      padding: 20px;
+      padding-top: 0;
   }
-  
-  
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+  .menu-icon{
+      display: block;
   }
-  .lokasi{
+  #menuList{
+      transition: all 0.5s;
+  }
+}
+
+/*nav end*/
+
+
+  
+ 
+.lokasi{
     text-align: center;
     transition: margin-left .5s;
-    padding: 16px;
+    
 }
 .lokasi iframe {
     width: 80%;
@@ -77,19 +102,39 @@ body {
     border-radius: 10px;
 }
 
+
 .more-info{
     background-color: #bf340a;
     padding: 100px 0px;
     
 }
+.more-info2{
+  background-color: #bf340a;
+  padding: 100px 0px 0px 0px;
+  
+}
 
 .more-info p{
     background-color: white;
-    padding: 30px 500px;
-    text-align: center;
-    line-height: 3rem;
+    padding: 50px 300px ;
+    text-align:justify;
+    line-height: 2.5rem;
     color: #bf340a;
     font-weight: bold;
+    font-size: 20px;
+}
+.more-info2 p{
+  background-color: white;
+  padding: 50px 300px ;
+  text-align:justify;
+  line-height: 2.5rem;
+  color: #bf340a;
+  font-weight: bold;
+  font-size: 20px;
+}
+.img-info{
+  width: 50%;
+  height: 500px;
 }
 .slideshow-container {
     max-width: 100%;
@@ -103,11 +148,11 @@ body {
     display: flex;
     align-items: center;
     background-color: #bf340a;
-    padding-bottom: 100px;
+    padding: 100px 0px;
   }
   .Containers img{
-    width: 30%;
-    height: 500px;
+    width: 50%;
+    height: 800px;
     border-radius: 10px;
   }
   
@@ -128,16 +173,16 @@ body {
   }
   
   .forward {
-    right: 655px;
+    right: 0px;
     border-radius: 100px;
   }
   .Back{
-   left: 655px;
+   left: 0px;
     border-radius: 100px;
   }
   
   .Back:hover, .forward:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #5f5e5ecc;
   }
   
   
@@ -162,4 +207,68 @@ body {
     from {opacity: .5}
     to {opacity: 2}
   }
-  
+   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+   @media screen and (max-width: 630px) {
+    .sidebar {padding-top: 15px;
+      
+      }
+    .sidebar a {font-size: 18px;}
+    .more-info{
+      padding: 25px 0px;
+    }
+    .more-info p{
+      font-size: 15px;
+      line-height: 1rem;
+      padding: 10px;
+    }
+    .more-info2{
+      padding: 25px 0px 0px 0px;
+    }
+    .more-info2 p{
+      font-size: 15px;
+      line-height: 1rem;
+      padding: 10px;
+    }
+    .Containers img{
+      width: 60%;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .Containers {
+      display: flex;
+      align-items: center;
+      background-color: #bf340a;
+      padding: 50px 0px;
+    }
+    .Back, .forward {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 17px;
+      color: grey;
+      font-weight: bold;
+      font-size: 19px;
+      transition: 0.4s ease;
+      border-radius: 50px;
+      user-select: none;
+      background-color: #111;
+      opacity: 80%;
+    }
+    .forward {
+    right: 0px;
+    border-radius: 100px;
+  } 
+  .Back{
+   left: 0px;
+    border-radius: 100px;
+  }
+    .Back:hover, .forward:hover {
+      background-color: #5f5e5ecc;
+    }
+    .img-info{
+      width: 80%;
+      height: 300px;
+    }
+  }

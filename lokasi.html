@@ -8,18 +8,31 @@
     
 </head>
 <body>
-    <div id="mySidebar" class="sidebar">
+    <!-- <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <img id="logo" src="./File PEMBUATAN WEB TA/Logo Rounded.png">
-        <h2>Rumah Makan & Coffe Shop Dipo 38</h2>
+        
         <a href="home.html">Halaman Utama</a>
         <a href="lokasi.html">Lokasi</a>
         <a href="#menu">Menu</a>
-    </div>
+    </div> -->
+   <nav>
+        <img  class="logo" src="./File PEMBUATAN WEB TA/Logo Rounded.png">
+        <ul id="menuList">
+            <li><a href="home.html">Halaman Utama</a></li>
+            <li><a href="lokasi.html">Lokasi</a></li>
+            <li><a href="#menu">Menu</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i  onclick="toggleMenu()">☰</i>
+        </div>
+
+    </nav>
     <div class="lokasi" id="lokasi">
-        <button class="openbtn" onclick="openNav()">☰</button>  
+        <!-- <button class="openbtn" onclick="openNav()">☰</button>   -->
         <h2>Lokasi</h2>
-        <iframe src="https://maps.app.goo.gl/YxXfSCtJWXKGKwH39" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d994.8823975284241!2d98.2157538!3d4.1156206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303713d8c29c8361%3A0x637bffaafbf9b73e!2sRumah%20Makan%20%26%20Cofffee%20Shop%20Dipo%2038!5e0!3m2!1sen!2sid!4v1715939565097!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="info">
                 <h2>Hubungi Kami</h2>
                 <p>topandakevin@gmail.com<br>+62 822-7437-9166<br>Jl. Diponegoro, Bukit Jengkol, Kec. Pangkalan Susu, Kabupaten Langkat, Sumatera Utara</p>
@@ -35,18 +48,20 @@
                 </p>
             
             </div>
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/kepiting(1).jpeg" style="width:50% ; height: auto;">
+            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/kepiting(1).jpeg"  class="img-info">
             <div class="more-info">
                 <p>Di Rumah Makan & coffe shop dipo 38, 
-                    kami menghadirkan pengalaman pelanggan yang unik dengan suasana yang hangat dan ramah. Setiap kunjungan di sini tidak hanya tentang makanan lezat, 
-                    tetapi juga tentang menciptakan kenangan berharga. Suasana yang dirancang dengan teliti, 
-                    kehangatan keramahan, dan perhatian terhadap detail membuat setiap kunjungan menjadi istimewa dan tak terlupakan. Di sini, Anda bukan sekadar pelanggan, Anda adalah bagian dari keluarga kami. 
+                    kami menghadirkan pengalaman pelanggan yang unik dengan suasana yang hangat dan ramah.
+                     Setiap kunjungan di sini tidak hanya tentang makanan lezat, 
+                    tetapi juga tentang menciptakan kenangan berharga.  Suasana yang  dirancangdengan teliti, 
+                    kehangatan keramahan, dan perhatian terhadap detail membuat setiap kunjungan menjadi istimewa dan tak terlupakan. 
+                    Disini, Anda bukan sekadar pelanggan, Anda adalah bagian dari keluarga kami. 
                 
                 </p>
             </div>
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/WhatsApp Image 2024-04-29 at 17.17.56.jpeg" style="width:50% ; height: auto;">
-            <div class="more-info">
-                <p>Di Rumah Makan & coffe shop dipo 38, Anda akan menemukan suasana yang unik dengan konsep warung makan bergaya rumah kayu tingkat. 
+            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/WhatsApp Image 2024-04-29 at 17.17.56.jpeg"  class="img-info">
+            <div class="more-info2">
+                <p>Di Rumah Makan & coffe shop dipo 38, Anda akan menemukan suasana yang unik dengan konsep warung makan bergaya rumah kayu tingkat.
                     Setiap sudut dirancang untuk menciptakan nuansa yang hangat dan alami, sambil memberikan kenyamanan kepada setiap pengunjung. 
                     Dengan dekorasi yang menghadirkan sentuhan tradisional namun tetap elegan, serta pencahayaan yang lembut, 
                     Anda akan merasa seperti berada di rumah masa lampau sambil menikmati hidangan lezat kami. Suasana santai namun 
@@ -78,7 +93,7 @@
                     <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="forward" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <br>
+               
                 
             </section>
     </div>
@@ -111,16 +126,21 @@
         } 
 
 </script>
-    <script>
-        function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("lokasi").style.marginLeft = "250px";
-}
+<script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("lokasi").style.marginLeft= "0";
-}
-    </script>
+    function toggleMenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+
 </body>
 </html>

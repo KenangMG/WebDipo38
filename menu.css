@@ -1,0 +1,83 @@
+
+.menu{
+    margin-left: 250px;
+    text-align: center;
+}
+.menu-item h2{
+    background-color: brown;
+    color: white;
+    padding: 50px;
+    margin-bottom: 0;
+}
+.container {
+   
+    align-items: center; /* Mengatur vertikal ke tengah */
+    text-align: left;
+}
+
+.image-menu {
+    flex-shrink: 0; /* Agar gambar tidak memperbesar wadah */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pesan-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.pesan-btn:hover {
+    background-color: #f7f7f7;
+    width: 210px;
+    color: black;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.menu-section {
+    margin: 20px 0;
+}
+.menu-section h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: brown;
+    padding: 30px;
+    margin-bottom: 0;
+}
+.menu-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 250px;
+}
+.menu-item img {
+    width: 500px;
+    height: 500px;
+    margin-left: 250px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.menu-item-content {
+    flex-grow: 1;
+    
+}
+.menu-item-content h3 {
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+.menu-item-content p {
+    text-align: left;
+
+}

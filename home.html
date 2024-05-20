@@ -8,23 +8,29 @@
     
 </head>
 <body>
-    <div class="sidebar">
-        <img id="logo" src="./File PEMBUATAN WEB TA/Logo Rounded.png">
-        <h2>Rumah Makan & Coffe Shop Dipo 38</h2>
-        <a href="#halaman-utama">Halaman Utama</a>
-        <a href="#lokasi">Lokasi</a>
-        <a href="#menu">Menu</a>
-    </div>
+    <nav>
+        <img  class="logo" src="./File PEMBUATAN WEB TA/Logo Rounded.png">
+        <ul id="menuList">
+            <li><a href="home.html">Halaman Utama</a></li>
+            <li><a href="lokasi.html">Lokasi</a></li>
+            <li><a href="#menu">Menu</a></li>
+            
+        </ul>
+        <div class="menu-icon">
+            <i  onclick="toggleMenu()">☰</i>
+        </div>
+
+    </nav>
     <div class="main-content">
         <div class="welcome" id="halaman-utama">
             <h1>Selamat Datang</h1>
             <p>Disini Bukan Hanya Hidangan Biasa, Tapi Cerita yang Bakal Bikin Anda Terpesona!</p>
-            <div style="background-color: brown; padding: 5px;"><a href="#reservasi" class="reserve-btn">Reservasi</a></div>
+            <div style="background-color: #bf340a; padding: 5px;"><a href="#reservasi" class="reserve-btn">Reservasi</a></div>
             
         </div>
         <div class="image-section" id="image-section">
             <h2>Rumah Makan Halal & Coffe Shop Dipo 38</h2>
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN DATA TEXT HALAMAN UTAMA/foto depan.jpeg" alt="Rumah Makan Halal & Coffe Shop Dipo 38">
+            <img class="img" src="./File PEMBUATAN WEB TA/FOTO DAN DATA TEXT HALAMAN UTAMA/foto depan.jpeg" alt="Rumah Makan Halal & Coffe Shop Dipo 38">
             <h2>Salam Ceria untuk Semua Pengunjung Online </h2>
             <h5>Selamat datang di Rumah Makan & coffe shop dipo 38, 
                 tempat di mana cita rasa berkumpul dalam harmoni yang memikat. 
@@ -39,169 +45,26 @@
 
             <div class="pers">
                   <h2>Liputan Pers</h2>
-                  <p>"Makanan enak harga terjangkau,,,kopi kualitas Cafe " - Review Melliza Besty
-                    <a href="https://g.co/kgs/qpqQBwV" >https://g.co/kgs/qpqQBwV</a>
-                  </p>
-                  <p>"Mantaaaap👍" - Review Budi Sulis <a href="https://g.co/kgs/KdaZkDp">https://g.co/kgs/KdaZkDp</a>
+                  <div class="column">
+                    <p>"Makanan enak harga terjangkau,<br>,kopi kualitas Cafe "
+                        <br> - Review Melliza Besty<br><br>
+                        <a href="https://g.co/kgs/qpqQBwV" >https://g.co/kgs/qpqQBwV</a>
+                    </p>
+                  </div>
+                  <div class="column">
+                    <p>"Mantaaaap👍"<br> - Review Budi Sulis <br><br>
+                        <a href="https://g.co/kgs/KdaZkDp">https://g.co/kgs/KdaZkDp</a>
 
-                  </p>
+                    </p>
+                  </div>
+                  
             </div>
         
         </div>
         
     </div>
-    <div class="lokasi" id="lokasi">
-        <h2>Lokasi</h2>
-        <iframe src="https://maps.app.goo.gl/YxXfSCtJWXKGKwH39" allowfullscreen="" loading="lazy"></iframe>
-            <div class="info">
-                <h2>Hubungi Kami</h2>
-                <p>topandakevin@gmail.com<br>+62 822-7437-9166<br>Jl. Diponegoro, Bukit Jengkol, Kec. Pangkalan Susu, Kabupaten Langkat, Sumatera Utara</p>
-                <h2>Jam Operasional</h2>
-                <p>Senin : 09.00 - 22.00<br>
-                   Selasa : 09.00 – 22.00<br>
-                   Rabu : 09.00 – 22.00<br>
-                   Kamis : 09.00 – 22.00<br>
-                   Jumat : 09.00 – 22.00<br>
-                   Sabtu : Tutup<br>
-                    Minggu : Tutup <br>
-
-                </p>
-            
-            </div>
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/kepiting(1).jpeg" style="width:50% ; height: auto;">
-            <div class="more-info">
-                <p>Di Rumah Makan & coffe shop dipo 38, 
-                    kami menghadirkan pengalaman pelanggan yang unik dengan suasana yang hangat dan ramah. Setiap kunjungan di sini tidak hanya tentang makanan lezat, 
-                    tetapi juga tentang menciptakan kenangan berharga. Suasana yang dirancang dengan teliti, 
-                    kehangatan keramahan, dan perhatian terhadap detail membuat setiap kunjungan menjadi istimewa dan tak terlupakan. Di sini, Anda bukan sekadar pelanggan, Anda adalah bagian dari keluarga kami. 
-                
-                </p>
-            </div>
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/WhatsApp Image 2024-04-29 at 17.17.56.jpeg" style="width:50% ; height: auto;">
-            <div class="more-info">
-                <p>Di Rumah Makan & coffe shop dipo 38, Anda akan menemukan suasana yang unik dengan konsep warung makan bergaya rumah kayu tingkat. 
-                    Setiap sudut dirancang untuk menciptakan nuansa yang hangat dan alami, sambil memberikan kenyamanan kepada setiap pengunjung. 
-                    Dengan dekorasi yang menghadirkan sentuhan tradisional namun tetap elegan, serta pencahayaan yang lembut, 
-                    Anda akan merasa seperti berada di rumah masa lampau sambil menikmati hidangan lezat kami. Suasana santai namun 
-                    penuh dengan karakter di Rumah Makan & coffe shop dipo 38 akan membuat setiap kunjungan menjadi pengalaman yang berbeda dan memikat.
-
-                
-                </p>
-            </div>
-            <div class="image-section" id="image-section">
-                <h2>Rumah Makan Halal & Coffe Shop Dipo 38</h2>
-                <div class="carousel">
-                    <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/2020-04-29.jpg" class="active" alt="Slide 1" class="img-corousel">
-                    <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/2020-07-18.jpg" alt="Slide 2" class="img-corousel">
-                    <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT LOKASI/Foto Lokasi/2022-09-18.jpg" alt="Slide 3" class="img-corousel">
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                </div>
-            </div>
-    </div>
-    <div class="menu-section" id="menu">
-        <h2>Menu Kami Tersedia untuk Memuaskan Selera Anda, Setiap Hari!</h2>
-        
-        <div style="background-color: #bbbbbb; padding: 10px; margin-top: 0;" >
-            <p style="color: black;">Pesan sekarang dan nikmati hidangan kami</p>
-            <button class="pesan-btn">Pesan</button>
-        </div>
-
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/ayam rendang.jpeg" alt="Daging Rendang">
-            <div class="menu-item-content">
-                <h3>Makanan nasi + lauk</h3>
-                <p>Rp15.000,- Nasi Rendang</p>
-                <p>Rp13.000,- Nasi Ayam Goreng</p>
-                <p>Rp15.000,- Nasi Ayam Bakar</p>
-                <p>Rp13.000,- Nasi Ikan Goreng</p>
-                <p>Rp15.000,- Nasi Ayam Gulai</p>
-                <p>Rp13.000,- Nasi Ayam Sambal</p>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/edit ikan kuah.jpeg" alt="Ikan Bakar">
-            <div class="menu-item-content">
-                
-                <p>Rp12.000,- Nasi Hati Ayam Goreng</p>
-                <p>Rp12.000,- Nasi Telur Dadar</p>
-                <p>Rp13.000,- Nasi Ikan Goreng</p>
-                <p>Rp15.000,- Nasi Ikan Kakap Gulai</p>
-                <p>Rp35.000,- Ikan Pari Bakar</p>
-                <p>Rp35.000,- Nasi Ikan Kerapu Bakar</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/kopi3.jpeg" alt="Ikan Bakar">
-            <div class="menu-item-content">
-                <h3>Espresso</h3>
-                <p>Rp15.000,-		Americano</p>
-                <p>Rp15.000,-		Long Black</p>
-                <p>Rp15.000,-		Double Espresso</p>
-                <p>Rp10.000,-		Single Espresso</p>
-                <p>Rp15.000,-		Es Kopi Susu</p>
-                
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/kopi10.jpeg" alt="Ikan Bakar">
-            <div class="menu-item-content">
-                
-                <p>Rp20.000,-		Es Kopi Alpukat</p>
-                <p>Rp18.000,-		Es Kopi Susu ula Aren</p>
-                <p>Rp15.000,-		Ice Latte</p>
-                <p>Rp20.000,-		Ice Hazelnut Latte</p>
-                <p>Rp20.000,-		Ice Caramel Latte</p>
-                
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/kopi7.jpeg" alt="Ikan Bakar">
-            <div class="menu-item-content">
-                
-                <p>Rp20.000,-		Ice Pandan Latte</p>
-                <p>Rp20.000,-		Ice Vanilla Latte</p>
-                <p>Rp18.000,-		Kopi Milo</p>
-                <p>Rp18.000,-		Kopi Dolce</p>
-                <p>Rp20.000,-		Caramel Machiato</p>
-                <p>Rp15.000,-		Cappucino</p>
-                
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/kopi11.jpeg" alt="Ikan Bakar">
-            <div class="menu-item-content">
-                <h3>Teh</h3>
-                <p>Rp5.000,-		Es Teh Manis</p>
-                <p>Rp7.000,-		Lemon Tea</p>
-                <p>Rp8.000,-		Jasmine Tea</p>
-                <p>Rp8.000,-		Vanilla Tea</p>
-                <p>Rp8.000,-		Black Tea</p>
-                <p>Rp10.000,-		Green Tea</p>
-                <p>Rp12.000,-		Green Tea Susu</p>
-                
-            </div>
-        </div>
-        <div class="menu-item">
-            <img src="./File PEMBUATAN WEB TA/FOTO DAN TEXT MENU/Foto Menu/WhatsApp Image 2024-04-29 at 17.19.38.jpeg" alt="Ikan Bakar">
-            <div class="menu-item-content">
-                <h3>Ice Blend</h3>
-                <p>Rp10.000,-		Taro</p>
-                <p>Rp10.000,-		Red Velveta</p>
-                <p>Rp10.000,-		Greentea Matcha</p>
-                <p>Rp8.000,-		Vanilla Tea</p>
-                <p>Rp5.000,-		Fruit Tea</p>
-                <p>Rp5.000,-		Teh Botol Sosro</p>
-                <p>Rp5.000,-		Air Mineral</p>
-                
-            </div>
-        </div>
-        <h2>Ingin pesan katering? Langsung klik tombol "Katering" sekarang untuk informasi selengkapnya.</h2>
-      
-        <button class="reserve-btn">Katering</button>
-
-    </div>
+    
+    
    <footer class="footer">
     <p>NAMA TEMPAT: RUMAH MAKAN & COFFE SHOP DIPO 38<br>
 
@@ -212,22 +75,21 @@
 
     
     
+   
     <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel img');
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+    
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
         }
-
-        function changeSlide(n) {
-            currentSlide = (currentSlide + n + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        showSlide(currentSlide);
+        
     </script>
 </body>
 </html>
